@@ -1,0 +1,158 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: OTUS_07.homework</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+   <div id="projectbrief">Программа для пакетной обработки команд.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">OTUS_07.homework </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >:books: <a href="https://shurafairy.github.io/OTUS_07.homework/index.html">Documentation</a></p>
+<h1><a class="anchor" id="autotoc_md438"></a>
+Задание 7</h1>
+<p >Разработать программу для пакетной обработки команд.</p>
+<p >Данные подаются на стандартный вход построчно с паузой в 1 секунду, считываются из стандартного ввода и обрабатываются блоками по N команд (N передается как единственный параметр командной строки в виде целого числа). Одна команда - одна строка. Если данные закончились - блок завершается принудительно. <br  />
+ Логика работы для статических блоков (в примере N == 3):</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Ввод   </th><th class="markdownTableHeadNone">Вывод   </th><th class="markdownTableHeadNone">Комментарий    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd1   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd2   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd3   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">bulk: cmd1, cmd2, cmd3   </td><td class="markdownTableBodyNone">Блок завершён – выводим блок.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd4   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd5   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">EOF   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">bulk: cmd4, cmd5   </td><td class="markdownTableBodyNone">Конец ввода – принудительно завершаем блок.   </td></tr>
+</table>
+<p >Размер блока можно изменить динамически, если перед началом блока и сразу после дать команды <code>{</code> и <code>}</code> соответственно. Предыдущий пакет при этом принудительно завершается. Такие блоки могут быть включены друг в друга при этом вложенные команды <code>{</code> и <code>}</code> игнорируются (но не сами блоки). Если данные закончились внутри динамического блока, весь динамический блок игнорируется. <br  />
+ Логика работы для динамического размера блоков (в примере N == 3): <br  />
+</p>
+<table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadNone">Ввод   </th><th class="markdownTableHeadNone">Вывод   </th><th class="markdownTableHeadNone">Комментарий    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd1   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd2   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">{   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">bulk: cmd1, cmd2   </td><td class="markdownTableBodyNone">Начало динамического блока – выводим предыдущий статический досрочно.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd3   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd4   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">}   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">bulk: cmd3, cmd4   </td><td class="markdownTableBodyNone">Конец динамического блока – выводим.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">{   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd5   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd6   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">{   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">Игнорируем вложенные команды.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd7   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd8   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">}   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">Игнорируем вложенные команды.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd9   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">}   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">bulk: cmd5, cmd6, cmd7, cmd8, cmd9   </td><td class="markdownTableBodyNone">Конец динамического блока – выводим.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">cmd10   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">cmd11   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyNone">EOF   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">--------&mdash;   </td><td class="markdownTableBodyNone">Конец ввода – динамический блок игнорируется, не выводим.   </td></tr>
+</table>
+<p >Вместе с выводом в консоль блоки должны сохранятся в отдельные файлы с именами bulk1517223860.log , где 1517223860 - это время получения первой команды из блока. По одному файлу на блок.</p>
+<p >Требования к реализации</p>
+<p >Бинарный файл должен называться bulk.</p>
+<p >Проверка</p>
+<p >Задание считается выполненным успешно, если после установки пакета и запуска с тестовыми данными вывод соответствует описанию. Данные подаются на стандартный вход построчно с паузой в 1 секунду для визуального контроля. Будет отмечена низкая связанность обработки данных, накопления пачек команд, вывода в консоль и сохранения в файлы. </p>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>bulk: Файл boost_unit_test.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">bulk<span id="projectnumber">&#160;0.0.1</span>
+   </div>
+   <div id="projectbrief">Программа для пакетной обработки команд.</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл boost_unit_test.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;boost/test/unit_test.hpp&gt;</code><br />
+<code>#include &quot;<a class="el" href="commands_8h_source.html">commands.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="logger_8h_source.html">logger.h</a>&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для boost_unit_test.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="boost__unit__test_8cpp__incl.png" border="0" usemap="#aboost__unit__test_8cpp" alt=""/></div>
+<map name="aboost__unit__test_8cpp" id="aboost__unit__test_8cpp">
+<area shape="rect" title=" " alt="" coords="163,5,298,32"/>
+<area shape="rect" title=" " alt="" coords="34,80,193,107"/>
+<area shape="rect" href="commands_8h.html" title=" " alt="" coords="176,155,272,181"/>
+<area shape="rect" href="logger_8h.html" title=" " alt="" coords="276,80,343,107"/>
+<area shape="rect" title=" " alt="" coords="5,229,77,256"/>
+<area shape="rect" title=" " alt="" coords="101,229,171,256"/>
+<area shape="rect" title=" " alt="" coords="280,229,339,256"/>
+<area shape="rect" title=" " alt="" coords="195,229,256,256"/>
+<area shape="rect" href="observer_8h.html" title=" " alt="" coords="363,229,445,256"/>
+<area shape="rect" title=" " alt="" coords="397,155,464,181"/>
+<area shape="rect" title=" " alt="" coords="488,155,568,181"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:a6b2a3852db8bb19ab6909bac01859985"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#a6b2a3852db8bb19ab6909bac01859985">BOOST_TEST_MODULE</a>&#160;&#160;&#160;test_version</td></tr>
+<tr class="separator:a6b2a3852db8bb19ab6909bac01859985"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a297b5e371d3f663d0528b92a284eb21a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#a297b5e371d3f663d0528b92a284eb21a">BOOST_AUTO_TEST_CASE</a> (subscribe)</td></tr>
+<tr class="separator:a297b5e371d3f663d0528b92a284eb21a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85e273cd370035c4b5b37f5d88d018ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#a85e273cd370035c4b5b37f5d88d018ef">BOOST_AUTO_TEST_CASE</a> (commands_without_brackets)</td></tr>
+<tr class="separator:a85e273cd370035c4b5b37f5d88d018ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7983aed75478fa31d01420db50464c58"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#a7983aed75478fa31d01420db50464c58">BOOST_AUTO_TEST_CASE</a> (commands_with_EOF)</td></tr>
+<tr class="separator:a7983aed75478fa31d01420db50464c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3435a92d9e5cd73f7a6567111a5bfe31"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#a3435a92d9e5cd73f7a6567111a5bfe31">BOOST_AUTO_TEST_CASE</a> (commands_with_brackets)</td></tr>
+<tr class="separator:a3435a92d9e5cd73f7a6567111a5bfe31"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabdd1c11cfd3b021590bfce6f8ac5a17"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="boost__unit__test_8cpp.html#aabdd1c11cfd3b021590bfce6f8ac5a17">BOOST_AUTO_TEST_CASE</a> (total_commands)</td></tr>
+<tr class="separator:aabdd1c11cfd3b021590bfce6f8ac5a17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Макросы</h2>
+<a id="a6b2a3852db8bb19ab6909bac01859985" name="a6b2a3852db8bb19ab6909bac01859985"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2a3852db8bb19ab6909bac01859985">&#9670;&nbsp;</a></span>BOOST_TEST_MODULE</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define BOOST_TEST_MODULE&#160;&#160;&#160;test_version</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<h2 class="groupheader">Функции</h2>
+<a id="a3435a92d9e5cd73f7a6567111a5bfe31" name="a3435a92d9e5cd73f7a6567111a5bfe31"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3435a92d9e5cd73f7a6567111a5bfe31">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[1/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">commands_with_brackets&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a7983aed75478fa31d01420db50464c58" name="a7983aed75478fa31d01420db50464c58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7983aed75478fa31d01420db50464c58">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[2/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">commands_with_EOF&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a85e273cd370035c4b5b37f5d88d018ef" name="a85e273cd370035c4b5b37f5d88d018ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a85e273cd370035c4b5b37f5d88d018ef">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[3/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">commands_without_brackets&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a297b5e371d3f663d0528b92a284eb21a" name="a297b5e371d3f663d0528b92a284eb21a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a297b5e371d3f663d0528b92a284eb21a">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[4/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">subscribe&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aabdd1c11cfd3b021590bfce6f8ac5a17" name="aabdd1c11cfd3b021590bfce6f8ac5a17"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabdd1c11cfd3b021590bfce6f8ac5a17">&#9670;&nbsp;</a></span>BOOST_AUTO_TEST_CASE() <span class="overload">[5/5]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">BOOST_AUTO_TEST_CASE </td>
+          <td>(</td>
+          <td class="paramtype">total_commands&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>
