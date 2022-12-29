@@ -115,7 +115,7 @@ void Commands::setTotalCommansForTest(const std::vector<std::string>& commands)
 }
 
 void Commands::doWorkForTest(const std::vector<std::string>& _commands) {
-	for (const auto command : _commands) {
+	for (const auto & command : _commands) {
 		commands = command; //std::getline(std::cin, _commands);
 		if (commands == "EOF") {//std::cin.eof()
 			number_commands--;
